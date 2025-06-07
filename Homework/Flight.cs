@@ -18,7 +18,13 @@ namespace Homework
             this.destination = destination;
         }
         public string FlNum { get { return flNum; } }
-        public string Origin { get { return origin; } }
-        public string Destination { get { return destination; } }
+        public string GetOrigin()
+        {
+            return origin;
+        }
+        public string GetDestination()
+        {
+            return destination;
+        }
     }
 }
