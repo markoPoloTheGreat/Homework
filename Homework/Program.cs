@@ -7,6 +7,7 @@ internal class Program
     {
         Console.WriteLine("Hello, World!");
         Console.WriteLine(Success(4));
+        
     }
     public static string Decode(string input,int code)
     {// question 2
@@ -17,7 +18,7 @@ internal class Program
         for (int i = 0; i < abc.Length; i++)
         {
             currPlace = Array.IndexOf(abc, arr[i]);
-            newPlace = (currPlace+code) % abc.Length;
+            newPlace = (currPlace-code) % abc.Length;
             arr[i] = abc[newPlace];
         }
         string result="";
